@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ComputerNetworks</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+<!--   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+  <script>
+    jQuery(document).ready(function() {
+  function close_accordion_section() {
+    jQuery('.accordion .accordion-section-title').removeClass('active');
+    jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+  }
+
+  jQuery('.accordion-section-title').click(function(e) {
+    // Grab current anchor value
+    var currentAttrValue = jQuery(this).attr('href');
+
+    if(jQuery(e.target).is('.active')) {
+      close_accordion_section();
+    }else {
+      close_accordion_section();
+
+      // Add active class to section title
+      jQuery(this).addClass('active');
+      // Open up the hidden content panel
+      jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+    }
+
+    e.preventDefault();
+  });
+});
+  </script>
+</head>
+<body>
+<div class="header-wrap">
+  <div class="header">
+    <div class="logo">
+      <h1>Computer Networks</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About </a></li>
+        <li><a href="services.html">Schedule </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page  mar-top30">
+      <div class="panel">
+
+          <div class="contentWrapper">
+          <div class="content">
+
+
+      <h1>All about this course</h1>
+      <p>The following for reference only.Actual course may vary.</p>
+      <br>
+        <div class="main">
+    <div class="accordion">
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-1">Syllabus</a>
+        <div id="accordion-1" class="accordion-section-content">
+          <ul>
+            <li>People</li>
+            <li>General Information</li>
+            <li>Reading Materials</li>
+            <li>Course Academic Integrity Policy</li>
+            <li>Outline of our study</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Video</h3>
+            <br>
+            <a href="https://www.youtube.com/watch?v=D4m_-_b-5D8" title="2016/09/29" target="_blank">2016/09/22</a>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-2">Chap 0 - Overview</a>
+        <div id="accordion-2" class="accordion-section-content">
+          <ul>
+            <li>Background Knowledge</li>
+            <li>OSI TCP/IP Model</li>
+            <li>Network command</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Video</h3>
+            <br>
+            <a href="https://www.youtube.com/watch?v=D4m_-_b-5D8" title="2016/09/29" target="_blank">2016/09/29 Part1</a>
+                        <br>
+            <a href="https://www.youtube.com/watch?v=aH1ETSMfCXc" title="2016/09/29" target="_blank">2016/09/29 Part2</a>
+                        <br>
+            <a href="https://www.youtube.com/watch?v=n-F0SHxOQeA" title="2016/09/29" target="_blank">2016/09/29 Part3</a>
+                        <br>
+			<a href="https://www.youtube.com/watch?v=RlLbNUSIbiY" title="2016/10/06" target="_blank">2016/10/06 Part1</a>
+            <br>
+			<a href="https://www.youtube.com/watch?v=7Z5zZQj6A1w" title="2016/10/06" target="_blank">2016/10/06 Part2</a>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-3">Chapter 1 - Computer Networks and the Internet</a>
+        <div id="accordion-3" class="accordion-section-content">
+          <ul>
+            <li>What's the Internet?</li>
+            <li>Network edge, hosts, access net, physical media</li>
+            <li>Network core: packet switching, Internet structure</li>
+            <li>Performance: delay, throughput</li>
+            <li>Protocol layers, service models</li>
+            <li>Security</li>
+            <li>History</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Video</h3>
+            <br>
+            <a href="https://www.youtube.com/watch?v=Ntf445pbZ5Y" title="2016/10/06" target="_blank">2016/10/06 Part3</a>
+             <br>
+            <a href="https://youtu.be/WMHppvj9Ri0" title="2016/10/13" target="_blank">2016/10/13 Part1</a>
+            <br>
+			<a href="https://youtu.be/JxB1eqQOklI" title="2016/10/13" target="_blank">2016/10/13 Part2</a>
+            <br>
+            <a href="https://youtu.be/qHzA7jslghM" title="2016/10/13" target="_blank">2016/10/13 Part3</a>
+            <br>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-4">Chapter 2 – Application Layer</a>
+        <div id="accordion-4" class="accordion-section-content">
+         <ul>
+            <li>Principles of network applications</li>
+            <li>Web and HTTP</li>
+            <li>FTP</li>
+            <li>Electronic mail</li>
+            <li>DNS</li>
+            <li>P2P applications</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Video</h3>
+            <br>
+            <a href="https://youtu.be/vLJsUbVrw_4" title="2016/10/20" target="_blank">2016/10/20 Part1</a>
+            <br>
+            <a href="https://youtu.be/ZODRSuiT-iM" title="2016/10/20" target="_blank">2016/10/20 Part2</a>
+            <br>
+            <a href="https://youtu.be/Cn3Q5a_2s4g" title="2016/10/20" target="_blank">2016/10/20 Part3</a>
+            <br>
+            <a href="https://youtu.be/UVSqp-JIel4" title="2016/10/27" target="_blank">2016/10/27 Part1</a>
+            <br>
+            <a href="https://youtu.be/BFldIth-YHw" title="2016/10/27" target="_blank">2016/10/27 Part2</a>
+            <br>
+            <a href="https://youtu.be/FNCqN9lTR5o" title="2016/10/27" target="_blank">2016/10/27 Part3</a>
+            <br>
+            <a href="https://youtu.be/14ir3YGoJN0" title="2016/10/27" target="_blank">2016/10/27 Part4</a>
+            <br>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-5">Chapter 3 – Transport Layer</a>
+        <div id="accordion-5" class="accordion-section-content">
+         <ul>
+            <li>Transport-layer services</li>
+            <li>Multiplexing and demultiplexing</li>
+            <li>Connectionless transport: UDP</li>
+            <li>Principles of reliable data transfer</li>
+            <li>Connection-oriented transport: TCP</li>
+            <li>Segment structure</li>
+            <li>Connection-oriented transport: TCP</li>
+            <li>Reliable data transfer</li>
+            <li>Flow control</li>
+            <li>Connection management</li>
+            <li>Principles of congestion control</li>
+            <li>TCP congestion control</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Video</h3>
+            <br>
+            <a href="https://youtu.be/rm-HLy_LXsg" title="2016/11/03" target="_blank">2016/11/03 Part1</a>
+            <br>
+            <a href="https://youtu.be/U_19eWZ8PJk" title="2016/11/03" target="_blank">2016/11/03 Part2</a>
+            <br>
+            <a href="https://youtu.be/WOG3m3TEU4A" title="2016/11/03" target="_blank">2016/11/03 Part3</a>
+            <br>
+            <a href="https://youtu.be/4Txi0NiJDaE" title="2016/11/03" target="_blank">2016/11/17 Part1</a>
+            <br>
+            <a href="https://youtu.be/Cail-so1r3s" title="2016/11/03" target="_blank">2016/11/17 Part2</a>
+            <br>
+            <a href="https://youtu.be/JYZz4nPgcdA" title="2016/11/03" target="_blank">2016/11/17 Part3</a>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-6">Chapter 4 – Network Layer</a>
+        <div id="accordion-6" class="accordion-section-content">
+         <ul>
+            <li>Introduction</li>
+            <li>Virtual circuit and datagram networks</li>
+            <li>What’s inside a router</li>
+            <li>IP: Internet Protocol</li>
+            <li>Routing algorithms</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Video</h3>
+            <br>
+			<a href="https://youtu.be/hcLMMwMfcd0" title="2016/11/03" target="_blank">2016/11/24 Part1</a>
+			<br>
+			<a href="https://youtu.be/y-igOpf5ynY" title="2016/11/03" target="_blank">2016/11/24 Part2</a>
+			<br>
+            <p>2016/12/01</p>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-7">Make RJ45 Cables</a>
+        <div id="accordion-7" class="accordion-section-content">
+        <div id="context-voice">
+          <iframe width="600" height="360" src="https://www.youtube.com/embed/psRUqi5o2-Q" frameborder="0" allowfullscreen></iframe>
+        </div>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+
+      <div class="accordion-section">
+        <a class="accordion-section-title" href="#accordion-8">Final Reports</a>
+        <div id="accordion-8" class="accordion-section-content">
+        <ul>
+            <li>Network Commands</li>
+            <li>Wireshark Labs</li>
+            <li>Network Applications</li>
+            <li>Socket Programming(optional)</li>
+            <br>
+             <img src="http://farm9.staticflickr.com/8215/29494497081_b09e69ac44_b.jpg" alt="icon"  class="float-left mar-right20"/>
+            <h3>Final Report Video</h3>
+            <br>
+            <p>2016/12/29</p>
+            <p>2017/01/05</p>
+          </ul>
+        </div><!--end .accordion-section-content-->
+      </div><!--end .accordion-section-->
+
+
+    </div><!--end .accordion-->
+  </div>
+
+      </div>
+      </div>
+    </div>
+    <div class="clearing"></div>
+  </div>
+<div class="footer-wrap">
+  <div class="footer">
+
+  </div>
+  <div class="clearing"></div>
+</div>
+<div class="clearing"></div>
+<div class="copyright-wrap">
+  <div class="copyright">
+    <div class="content">
+      <p>Copyright © 2016 Wireless Internet Technology Lab</p>
+    </div>
+  </div>
+</div>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"sos84418@gmail.com","created_at":1473259607,"user_id":56221,"user_hash":"de3ce066d3c4dbc7c2b0df2cbfdbe68cf66c5d76ed2f6418005ab3692cea2c9f","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fafb1612635c49d90fa756b7d37f7bcedca29586';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"sos84418@gmail.com","created_at":1473259607,"user_id":56221,"user_hash":"de3ce066d3c4dbc7c2b0df2cbfdbe68cf66c5d76ed2f6418005ab3692cea2c9f","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fafb1612635c49d90fa756b7d37f7bcedca29586';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"sos84418@gmail.com","created_at":1473259607,"user_id":56221,"user_hash":"de3ce066d3c4dbc7c2b0df2cbfdbe68cf66c5d76ed2f6418005ab3692cea2c9f","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fafb1612635c49d90fa756b7d37f7bcedca29586';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"sos84418@gmail.com","created_at":1473259607,"user_id":56221,"user_hash":"de3ce066d3c4dbc7c2b0df2cbfdbe68cf66c5d76ed2f6418005ab3692cea2c9f","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fafb1612635c49d90fa756b7d37f7bcedca29586';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"sos84418@gmail.com","created_at":1473259607,"user_id":56221,"user_hash":"de3ce066d3c4dbc7c2b0df2cbfdbe68cf66c5d76ed2f6418005ab3692cea2c9f","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fafb1612635c49d90fa756b7d37f7bcedca29586';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+<script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"sos84418@gmail.com","created_at":1473259607,"user_id":56221,"user_hash":"de3ce066d3c4dbc7c2b0df2cbfdbe68cf66c5d76ed2f6418005ab3692cea2c9f","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/fafb1612635c49d90fa756b7d37f7bcedca29586';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+</body>
+</html>
